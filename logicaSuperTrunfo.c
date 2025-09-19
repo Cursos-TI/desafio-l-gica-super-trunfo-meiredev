@@ -81,6 +81,16 @@ int main() {
     scanf("%d", &carta2.pontosTuristicos);
     calcularIndicadores(&carta2);  // Calcular Densidade Populacional e PIB per capita
 
+    // Menu interativo
+    printf("\nEscolha o atributo para comparar as cartas:\n");
+    printf("1 - População\n");
+    printf("2 - Área\n");
+    printf("3 - PIB\n");
+    printf("4 - Pontos Turísticos\n");
+    printf("5 - Densidade Demográfica\n");
+    printf("Digite sua opção (1-5): ");
+    scanf("%d", &atributoEscolhido);
+
     // Comparar as duas cartas
     compararCartas(carta1, carta2);
     
